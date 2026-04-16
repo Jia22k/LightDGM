@@ -1,0 +1,2002 @@
+{
+  "r_80_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_80_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_80_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_80_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_80_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_94_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_94_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_94_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_94_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_94_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_43_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_43_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_43_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_43_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_43_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_57_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_57_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_57_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_57_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_57_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_56_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_56_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_56_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_56_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_56_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_42_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_42_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_42_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_42_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_42_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_95_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_95_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_95_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_95_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_95_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_81_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_81_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_81_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_81_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_81_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_97_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_97_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_97_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_97_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_97_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_83_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_83_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_83_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_83_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_83_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_54_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_54_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_54_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_54_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_54_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_40_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_40_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_40_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_40_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_40_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_68_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_68_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_68_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_68_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_68_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_69_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_69_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_69_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_69_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_69_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_41_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_41_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_41_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_41_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_41_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_55_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_55_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_55_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_55_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_55_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_82_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_82_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_82_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_82_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_82_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_96_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_96_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_96_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_96_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_96_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_9_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_9_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_9_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_9_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_9_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_92_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_92_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_92_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_92_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_92_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_86_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_86_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_86_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_86_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_86_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_79_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_79_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_79_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_79_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_79_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_51_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_51_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_51_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_51_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_51_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_45_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_45_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_45_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_45_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_45_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_44_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_44_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_44_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_44_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_44_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_50_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_50_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_50_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_50_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_50_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_78_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_78_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_78_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_78_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_78_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_87_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_87_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_87_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_87_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_87_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_93_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_93_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_93_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_93_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_93_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_8_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_8_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_8_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_8_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_8_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_85_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_85_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_85_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_85_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_85_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_91_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_91_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_91_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_91_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_91_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_46_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_46_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_46_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_46_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_46_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_52_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_52_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_52_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_52_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_52_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_53_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_53_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_53_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_53_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_53_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_47_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_47_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_47_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_47_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_47_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_90_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_90_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_90_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_90_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_90_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_84_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_84_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_84_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_84_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_84_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_20_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_20_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_20_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_20_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_20_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_34_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_34_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_34_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_34_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_34_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_35_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_35_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_35_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_35_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_35_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_21_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_21_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_21_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_21_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_21_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_37_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_37_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_37_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_37_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_37_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_23_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_23_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_23_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_23_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_23_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_22_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_22_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_22_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_22_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_22_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_36_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_36_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_36_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_36_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_36_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_32_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_32_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_32_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_32_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_32_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_26_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_26_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_26_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_26_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_26_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_27_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_27_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_27_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_27_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_27_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_33_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_33_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_33_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_33_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_33_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_19_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_19_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_19_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_19_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_19_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_25_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_25_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_25_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_25_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_25_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_31_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_31_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_31_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_31_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_31_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_30_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_30_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_30_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_30_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_30_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_24_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_24_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_24_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_24_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_24_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_18_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_18_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_18_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_18_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_18_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_15_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_15_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_15_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_15_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_15_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_29_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_29_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_29_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_29_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_29_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_28_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_28_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_28_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_28_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_28_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_14_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_14_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_14_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_14_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_14_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_16_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_16_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_16_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_16_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_16_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_17_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_17_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_17_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_17_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_17_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_13_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_13_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_13_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_13_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_13_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_12_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_12_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_12_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_12_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_12_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_38_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_38_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_38_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_38_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_38_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_10_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_10_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_10_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_10_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_10_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_11_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_11_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_11_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_11_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_11_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_39_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_39_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_39_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_39_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_39_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_6_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_6_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_6_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_6_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_6_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_89_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_89_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_89_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_89_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_89_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_62_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_62_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_62_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_62_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_62_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_76_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_76_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_76_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_76_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_76_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_77_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_77_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_77_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_77_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_77_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_63_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_63_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_63_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_63_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_63_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_88_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_88_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_88_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_88_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_88_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_7_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_7_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_7_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_7_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_7_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_5_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_5_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_5_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_5_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_5_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_75_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_75_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_75_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_75_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_75_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_61_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_61_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_61_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_61_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_61_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_49_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_49_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_49_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_49_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_49_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_48_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_48_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_48_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_48_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_48_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_60_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_60_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_60_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_60_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_60_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_74_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_74_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_74_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_74_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_74_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_4_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_4_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_4_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_4_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_4_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_0_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_0_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_0_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_0_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_0_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_58_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_58_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_58_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_58_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_58_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_70_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_70_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_70_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_70_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_70_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_64_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_64_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_64_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_64_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_64_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_65_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_65_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_65_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_65_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_65_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_71_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_71_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_71_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_71_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_71_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_59_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_59_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_59_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_59_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_59_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_1_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_1_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_1_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_1_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_1_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_3_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_3_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_3_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_3_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_3_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_98_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_98_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_98_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_98_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_98_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_67_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_67_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_67_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_67_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_67_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_73_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_73_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_73_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_73_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_73_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_72_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_72_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_72_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_72_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_72_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_66_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_66_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_66_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_66_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_66_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_99_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_99_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_99_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_99_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_99_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  },
+  "r_2_orig.png": {
+    "brightness": 1.0,
+    "warmth": 0.0
+  },
+  "r_2_dark.png": {
+    "brightness": 0.7,
+    "warmth": 0.0
+  },
+  "r_2_bright.png": {
+    "brightness": 1.3,
+    "warmth": 0.0
+  },
+  "r_2_warm.png": {
+    "brightness": 1.0,
+    "warmth": 0.8
+  },
+  "r_2_cool.png": {
+    "brightness": 1.0,
+    "warmth": -0.8
+  }
+}

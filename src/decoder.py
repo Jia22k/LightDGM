@@ -1,3 +1,19 @@
+""" This file contains the neural network itself.
+
+This is the “brain” of the project.
+
+It defines:
+
+encoder layers
+decoder layers
+convolution layers
+forward pass
+
+This file decides how the model turns:
+
+original image + lighting code -> generated image
+
+ improved this file by switching to transpose convolutions, which made the images look sharper."""
 import torch
 import torch.nn as nn
 

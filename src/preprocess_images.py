@@ -1,3 +1,14 @@
+
+# This file creates fake lighting conditions.
+
+# For every original image, it  creates:
+
+# dark version
+#bright version
+#warm version
+#cool version
+
+#So one original image becomes many training examples.
 from pathlib import Path
 from PIL import Image
 

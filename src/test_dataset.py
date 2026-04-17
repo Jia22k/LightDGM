@@ -1,3 +1,15 @@
+
+''' This is a quick debugging file.
+
+It checks whether dataset.py is working correctly.
+
+For example, it prints:
+
+image shapes
+tensor shapes
+lighting tensor values
+
+This helps catch errors early.'''
 from dataset import LightingDataset
 
 dataset = LightingDataset()

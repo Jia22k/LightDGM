@@ -1,3 +1,18 @@
+''' This checks whether the neural network can run without crashing.
+
+It usually:
+
+creates fake input data
+passes it through the model
+prints the output shape
+
+Example:
+
+input image shape = [1, 3, 128, 128]
+output image shape = [1, 3, 128, 128]
+
+That confirms the network architecture is valid.'''
+
 import torch
 from decoder import LightingDecoder
 

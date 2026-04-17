@@ -1,3 +1,30 @@
+""" dataset.py
+
+This file is what feeds data into the model during training.
+
+It tells PyTorch:
+
+where images are stored
+how to load them
+what inputs and targets should be
+
+Right now your dataset returns:
+
+original_image
+lighting_tensor
+target_image
+
+Example:
+
+input: original Lego image
+lighting: [1.3, 0.0]
+target: bright Lego image
+
+So the model learns:
+
+"If I see this object and this lighting code,
+what should the final image look like?" """
+
 import os
 import json
 import torch

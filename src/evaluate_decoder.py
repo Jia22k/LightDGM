@@ -1,3 +1,17 @@
+'''This file loads the saved model and shows results.
+
+It does not train.
+
+Instead, it:
+
+loads a trained checkpoint
+gives the model different lighting codes
+displays the generated outputs
+
+That is the file that made the side-by-side images like:
+
+input | dark | orig | bright | warm | cool'''
+
 import torch
 import matplotlib.pyplot as plt
 from PIL import Image

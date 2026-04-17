@@ -1,3 +1,14 @@
+''' file actually trains the model.
+
+It:
+
+loads the dataset
+loads the neural network
+loops through the data many times
+calculates loss
+updates the model weights
+saves checkpoints.'''
+
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -15,7 +26,7 @@ model = LightingDecoder().to(device)
 criterion = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
-epochs = 100
+epochs = 500
 
 for epoch in range(epochs):
     total_loss = 0

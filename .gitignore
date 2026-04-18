@@ -7,3 +7,5 @@ outputs/logs/
 data/
 *.png
 *.npy
+*.csv
+*.json

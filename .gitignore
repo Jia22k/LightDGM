@@ -3,4 +3,7 @@ __pycache__/
 *.pyc
 outputs/checkpoints/
 outputs/logs/
-.DS_Store
+.DS_Storedata/pix2pix/
+processed/
+pytorch-CycleGAN-and-pix2pix/
+*.png

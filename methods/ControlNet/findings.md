@@ -1,134 +1,300 @@
+# ControlNet for Illumination Analysis
+
+## 1. Introduction
+
+ControlNet extends diffusion models by incorporating **explicit conditioning signals** (e.g., edge maps, depth maps) to guide image generation. In this study, we evaluate whether ControlNet improves **illumination controllability** compared to vanilla Stable Diffusion.
+
+Specifically, we test:
+- Whether structural conditioning (Canny edges) enables better lighting control
+- Whether prompt-guided illumination becomes more reliable
+- Whether intermediate diffusion steps reveal interpretable lighting behavior
 
 ---
 
-```markdown
-# ControlNet Evaluation Report  
-## Structural Conditioning vs Illumination Control
+## 2. Methodology
+
+### 2.1 Model Setup
+
+We use:
+- Stable Diffusion v1.5 backbone
+- ControlNet (Canny edge conditioning)
+
+Input:
+- Low-light images from the LoL dataset
+
+Control signal:
+- Edge maps extracted via Canny detection
 
 ---
 
-## 1. Objective
+### 2.2 Conditioning Mechanism
 
-ControlNet was evaluated as a potential method for:
+ControlNet modifies the diffusion process:
 
-> Improving illumination control while preserving scene structure.
+$$
+\epsilon_\theta(x_t, c, s)
+$$
 
----
-
-## 2. Approach
-
-We used:
-- Stable Diffusion + ControlNet (Canny edges)
-
-Inputs:
-- Original image
-- Edge map (Canny)
-
-Goal:
-- Preserve structure
-- Modify lighting via prompt
+where:
+- $x_t$ = noisy latent
+- $c$ = text prompt (lighting condition)
+- $s$ = structural conditioning (edges)
 
 ---
 
-## 3. Observed Results
+### 2.3 Experimental Variables
 
-### Output Characteristics:
-- Severe structural distortion
-- Generated images unrelated to original
-- Abstract patterns and artifacts
+We vary:
 
----
+- Lighting prompts:
+  - Bright
+  - Dark
+  - Warm
+  - Cool
 
-## 4. Failure Analysis
+- Strength parameter:
+  $$
+  \alpha \in \{0.15, 0.3, 0.5\}
+  $$
 
-### 4.1 Edge Maps are Poor Illumination Signals
-
-Canny edges:
-- encode boundaries
-- do NOT encode:
-  - shading
-  - intensity
-  - light direction
-
-Thus:
-
-> **Control signal is misaligned with task**
+This controls:
+- Degree of deviation from input image
+- Intensity of transformation
 
 ---
 
-### 4.2 ControlNet Prior Mismatch
+### 2.4 Evaluation Metrics
 
-ControlNet is trained on:
-- edges → realistic images
+We measure:
 
-But expects:
-- strong, clean structural cues
-
-Low-light images produce:
-- noisy edges
-- incomplete structure
-
----
-
-### 4.3 Dominance of Control Signal
-
-ControlNet prioritizes:
-- control image over original image
-
-Result:
-- original scene ignored
-- new image generated from edges
+- Structural Similarity (SSIM)
+- Learned Perceptual Image Patch Similarity (LPIPS)
+- Brightness Change:
+  $$
+  \Delta B = \mathbb{E}[B_{\text{output}}] - \mathbb{E}[B_{\text{input}}]
+  $$
+- Histogram Shift
 
 ---
 
-## 5. Key Finding
-
-> **Structure alone is insufficient to guide illumination**
+## 3. Results
 
 ---
 
-## 6. Comparison to Stable Diffusion
+### 3.1 Brightness Behavior
 
-| Model | Strength | Weakness |
-|------|--------|----------|
-| SD | Flexible | unstable lighting |
-| ControlNet | Structured | ignores lighting |
+At **low strength (0.15)**:
+- All conditions produce **negative brightness change**
+- Model consistently **darkens images**, regardless of prompt
+
+At **medium strength (0.3)**:
+- Slight variation appears
+- Only "warm" condition increases brightness
+- Others remain inconsistent
+
+At **high strength (0.5)**:
+- All conditions produce **positive brightness**
+- However:
+  - “dark” produces the **largest increase**
+  - “bright” is not dominant
 
 ---
 
-## 7. Interpretation
+### Key Observation
 
-ControlNet assumes:
+> Lighting prompts do not correspond to expected brightness changes.
 
-> structure defines image
+---
 
-But illumination depends on:
-- geometry
-- materials
-- light sources
+### 3.2 Strength vs Brightness
 
-Edges do not encode these.
+Across all conditions:
+
+- Brightness increases with strength
+- Ordering of conditions is inconsistent
+
+---
+
+### Interpretation
+
+> Strength controls magnitude of change, not lighting semantics.
+
+---
+
+### 3.3 Structure Preservation
+
+SSIM decreases monotonically with strength:
+
+- $\alpha = 0.15$ → high SSIM (~0.88)
+- $\alpha = 0.5$ → lower SSIM (~0.73)
+
+---
+
+### Interpretation
+
+> Increased transformation leads to structural degradation.
+
+---
+
+### 3.4 Tradeoff Analysis
+
+Plots of SSIM vs brightness reveal:
+
+- No clear tradeoff curve
+- Wide dispersion at higher strengths
+- Overlapping behavior across conditions
+
+---
+
+### Interpretation
+
+> Illumination is not a controllable dimension in latent space.
+
+---
+
+### 3.5 Variability
+
+Brightness variance increases with strength:
+
+- High instability at $\alpha = 0.5$
+- Non-monotonic behavior across conditions
+
+---
+
+### Interpretation
+
+> Outputs become increasingly stochastic with stronger conditioning.
+
+---
+
+## 4. Discussion
+
+---
+
+### 4.1 Prompt Misalignment
+
+ControlNet does not align output with prompt semantics:
+
+- “dark” can produce brightest outputs
+- “bright” does not consistently increase brightness
+
+---
+
+### 4.2 Structural Conditioning ≠ Lighting Control
+
+Even with edge guidance:
+
+- Lighting behavior remains inconsistent
+- No spatially meaningful illumination patterns emerge
+
+---
+
+### 4.3 Lack of Illumination Representation
+
+Unlike intrinsic models, ControlNet does not model:
+
+$$
+I(x) = R(x) \cdot L(x)
+$$
+
+Instead, it learns:
+
+$$
+I \rightarrow I'
+$$
+
+with implicit, entangled transformations.
+
+---
+
+### 4.4 Entanglement of Lighting and Content
+
+Changes in brightness are coupled with:
+
+- texture changes
+- structural distortion
+- perceptual shifts
+
+---
+
+## 5. Comparison to Stable Diffusion
+
+| Property | Stable Diffusion | ControlNet |
+|--------|----------------|-----------|
+| Structure Preservation | Low–Medium | Medium |
+| Lighting Control | ❌ | ❌ |
+| Prompt Alignment | ❌ | ❌ |
+| Variability | High | High |
+| Conditioning | None | Structural |
+
+---
+
+### Key Insight
+
+> ControlNet improves structural guidance but does not improve illumination control.
+
+---
+
+## 6. Comparison to GAN-based Models
+
+| Model | Lighting Behavior |
+|------|----------------|
+| Pix2Pix | Consistent mapping |
+| CycleGAN | Domain-level transformation |
+| ControlNet | Inconsistent, prompt-insensitive |
+
+---
+
+### Interpretation
+
+> GAN-based models succeed due to supervised mapping, not explicit lighting understanding.
+
+---
+
+## 7. Key Findings
+
+1. **Prompt Failure**
+   - Lighting prompts do not produce consistent outcomes
+
+2. **Strength Dominance**
+   - Strength controls magnitude but not direction of brightness
+
+3. **No Monotonic Behavior**
+   - Lighting changes are non-linear and unpredictable
+
+4. **High Variability**
+   - Outputs become unstable at higher strengths
+
+5. **No Illumination Modeling**
+   - Lighting remains implicit and entangled
 
 ---
 
 ## 8. Conclusion
 
-> ControlNet (Canny) is not suitable for relighting tasks.
+ControlNet does not provide a reliable framework for illumination control.
+
+Despite adding structural conditioning, the model:
+
+- Fails to align with lighting prompts
+- Produces inconsistent brightness changes
+- Does not represent illumination explicitly
 
 ---
 
-## 9. Insight
+### Final Insight
 
-This failure reinforces a core idea:
-
-> **Illumination is not a structural feature — it is a spatial, continuous field.**
+> ControlNet demonstrates that structural guidance alone is insufficient for controllable relighting, reinforcing that diffusion-based models lack an explicit representation of illumination.
 
 ---
 
-## 10. Future Directions
+## 9. Implications
 
-- Use depth maps instead of edges
-- Train ControlNet on illumination-specific signals
-- Combine with intrinsic decomposition
+This study suggests:
 
----
+- Relighting requires explicit modeling of illumination
+- Generative models without physical constraints cannot reliably control lighting
+- Future work should focus on:
+  - intrinsic decomposition
+  - geometry-aware models
+  - physically grounded representations

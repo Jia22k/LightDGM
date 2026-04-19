@@ -13,7 +13,7 @@ from eval.eval import compute_metrics
 dataset = LoLDataset("datasets/LoL/eval15/low/")
 runner = ControlNetRunner()
 
-save_root = "outputs_controlnet"
+save_root = "methods/ControlNet/outputs"
 os.makedirs(save_root, exist_ok=True)
 
 prompts = {

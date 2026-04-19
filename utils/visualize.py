@@ -7,8 +7,8 @@ import seaborn as sns
 # Setup
 # ------------------------
 
-csv_path = "../methods/StableDiffusion/outputs/aggregated_results.csv"
-save_dir = "../methods/StableDiffusion/outputs/plots"
+csv_path = "../methods/ControlNet/outputs/aggregated_results.csv"
+save_dir = "../methods/ControlNet/outputs/plots"
 os.makedirs(save_dir, exist_ok=True)
 
 df = pd.read_csv(csv_path)

@@ -3,8 +3,8 @@ import json
 import numpy as np
 import pandas as pd
 
-metrics_path = "../methods/StableDiffusion/outputs/metrics.json"
-npy_dir = "../methods/StableDiffusion/outputs/metrics"
+metrics_path = "../methods/ControlNet/outputs/metrics.json"
+npy_dir = "../methods/ControlNet/outputs/metrics"
 
 # ------------------------
 # Load JSON
@@ -54,7 +54,7 @@ for entry in metrics_data:
 df = pd.DataFrame(rows)
 
 # Save flat table
-df.to_csv("../methods/StableDiffusion/outputs/aggregated_results.csv", index=False)
+df.to_csv("../methods/ControlNet/outputs/aggregated_results.csv", index=False)
 
 print("Saved aggregated_results.csv")
 
@@ -68,6 +68,6 @@ pivot = df.pivot_table(
     values=["ssim", "lpips", "brightness_diff"]
 )
 
-pivot.to_csv("../methods/StableDiffusion/outputs/pivot_results_multistrength.csv")
+pivot.to_csv("../methods/ControlNet/outputs/pivot_results_multistrength.csv")
 
 print("Saved pivot_results_multistrength.csv")

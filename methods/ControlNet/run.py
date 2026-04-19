@@ -1,23 +1,20 @@
 import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
+
+
 import json
 import numpy as np
-from ...data.data_loader import LoLDataset
-from model import StableDiffusionRunner
-from ...eval.eval import compute_metrics
+from data.data_loader import LoLDataset
+from model import ControlNetRunner
+from eval.eval import compute_metrics
 
-# ------------------------
-# Setup
-# ------------------------
+dataset = LoLDataset("datasets/LoL/eval15/low/")
+runner = ControlNetRunner()
 
-dataset = LoLDataset("../../datasets/LoL/eval15/low/")
-runner = StableDiffusionRunner()
-
-save_root = "outputs"
+save_root = "outputs_controlnet"
 os.makedirs(save_root, exist_ok=True)
-
-# ------------------------
-# Lighting prompts
-# ------------------------
 
 prompts = {
     "bright": "same scene, strong bright lighting, high exposure, well illuminated",
@@ -28,11 +25,8 @@ prompts = {
 
 negative_prompt = "dark, underexposed, dim lighting, shadows"
 
-# ------------------------
-# Loop
-# ------------------------
-
 strengths = [0.15, 0.3, 0.5]
+
 all_metrics = []
 
 for idx in range(len(dataset)):
@@ -46,7 +40,7 @@ for idx in range(len(dataset)):
 
             name = f"{base_name}_{condition}_s{int(strength*100)}"
 
-            print(f"Running: {name}")
+            print(f"Running ControlNet: {name}")
 
             output_np = runner.run(
                 img,
@@ -54,7 +48,7 @@ for idx in range(len(dataset)):
                 negative_prompt,
                 save_root,
                 name,
-                strength=strength   # NEW
+                strength
             )
 
             metrics = compute_metrics(img_np, output_np)
@@ -67,17 +61,10 @@ for idx in range(len(dataset)):
 
             all_metrics.append(metrics)
 
-            # ------------------------
-            # Checkpoints
-            # ------------------------
             if len(all_metrics) % 10 == 0:
-                with open("outputs/metrics_partial.json", "w") as f:
+                with open(os.path.join(save_root, "metrics_partial.json"), "w") as f:
                     json.dump(all_metrics, f, indent=4)
 
-                print(f"Checkpoint saved at {len(all_metrics)} entries")
-
-# ------------------------
-# Save metrics
-# ------------------------
+# final save
 with open(os.path.join(save_root, "metrics.json"), "w") as f:
     json.dump(all_metrics, f, indent=4)

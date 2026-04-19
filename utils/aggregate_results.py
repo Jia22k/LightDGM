@@ -7,7 +7,7 @@ metrics_path = "../methods/StableDiffusion/outputs/metrics.json"
 npy_dir = "../methods/StableDiffusion/outputs/metrics"
 
 # ------------------------
-# Load metrics.json
+# Load JSON
 # ------------------------
 
 with open(metrics_path, "r") as f:
@@ -16,18 +16,16 @@ with open(metrics_path, "r") as f:
 rows = []
 
 # ------------------------
-# Process each entry
+# Process entries
 # ------------------------
 
 for entry in metrics_data:
-    name = entry["image"]   # e.g. "10_bright"
+    image_id = entry["image"]
+    condition = entry["condition"]
+    strength = entry["strength"]
 
-    # Split name
-    parts = name.split("_")
-    image_id = parts[0]
-    condition = parts[1]
+    name = f"{image_id}_{condition}_s{int(strength*100)}"
 
-    # Load brightness evolution
     brightness_path = os.path.join(npy_dir, f"{name}_brightness.npy")
 
     if os.path.exists(brightness_path):
@@ -39,6 +37,7 @@ for entry in metrics_data:
     row = {
         "image": image_id,
         "condition": condition,
+        "strength": strength,
         "ssim": entry["ssim"],
         "lpips": entry["lpips"],
         "brightness_diff": entry["brightness_diff"],
@@ -54,17 +53,21 @@ for entry in metrics_data:
 
 df = pd.DataFrame(rows)
 
-# Save full table
+# Save flat table
 df.to_csv("../methods/StableDiffusion/outputs/aggregated_results.csv", index=False)
 
 print("Saved aggregated_results.csv")
 
 # ------------------------
-# Pivot table (clean view)
+# Pivot (multi-index)
 # ------------------------
 
-pivot = df.pivot(index="image", columns="condition")
+pivot = df.pivot_table(
+    index="image",
+    columns=["condition", "strength"],
+    values=["ssim", "lpips", "brightness_diff"]
+)
 
-pivot.to_csv("../methods/StableDiffusion/outputs/pivot_results.csv")
+pivot.to_csv("../methods/StableDiffusion/outputs/pivot_results_multistrength.csv")
 
-print("Saved pivot_results.csv")
+print("Saved pivot_results_multistrength.csv")

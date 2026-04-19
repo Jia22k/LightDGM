@@ -2,165 +2,127 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 
 # ------------------------
 # Setup
 # ------------------------
 
-csv_path = "../methods/ControlNet/outputs/aggregated_results.csv"
-save_dir = "../methods/ControlNet/outputs/plots"
+csv_path = "../methods/ZeroDCE/outputs/aggregated_results.csv"
+save_dir = "../methods/ZeroDCE/outputs/plots"
 os.makedirs(save_dir, exist_ok=True)
 
 df = pd.read_csv(csv_path)
 
+# Normalize columns
+df["condition"] = df.get("condition", "none")
+df["strength"] = df.get("strength", "none")
+df["strength_numeric"] = pd.to_numeric(df["strength"], errors="coerce")
+
+has_strength = df["strength_numeric"].notna().any()
+has_condition = df["condition"].nunique() > 1
+
 # ------------------------
-# 1. SSIM vs Brightness (colored by strength)
+# 1. SSIM vs Brightness
 # ------------------------
 
 plt.figure(figsize=(8,6))
 
-scatter = plt.scatter(
-    df["brightness_diff"],
-    df["ssim"],
-    c=df["strength"],
-    cmap="viridis",
-    alpha=0.8
-)
+if has_strength:
+    scatter = plt.scatter(
+        df["brightness_diff"],
+        df["ssim"],
+        c=df["strength_numeric"],
+        cmap="viridis",
+        alpha=0.8
+    )
+    plt.colorbar(scatter, label="Strength")
+else:
+    plt.scatter(df["brightness_diff"], df["ssim"], alpha=0.8)
 
-plt.colorbar(scatter, label="Strength")
 plt.xlabel("Brightness Change")
-plt.ylabel("SSIM (Structure)")
-plt.title("SSIM vs Brightness (Colored by Strength)")
+plt.ylabel("SSIM")
+plt.title("SSIM vs Brightness")
 plt.grid()
 
-plt.savefig(os.path.join(save_dir, "tradeoff_strength.png"))
+plt.savefig(os.path.join(save_dir, "tradeoff.png"))
 plt.close()
 
 # ------------------------
-# 2. Separate tradeoff per strength
+# 2. Brightness Histogram (ALWAYS)
 # ------------------------
 
-for strength in sorted(df["strength"].unique()):
-    subset = df[df["strength"] == strength]
+plt.figure()
+df["brightness_diff"].hist(bins=20)
+plt.xlabel("Brightness Change")
+plt.title("Brightness Distribution")
+plt.grid()
 
+plt.savefig(os.path.join(save_dir, "brightness_hist.png"))
+plt.close()
+
+# ------------------------
+# 3. Brightness Consistency
+# ------------------------
+
+plt.figure()
+plt.plot(df["brightness_diff"].values)
+plt.xlabel("Image Index")
+plt.ylabel("Brightness Change")
+plt.title("Brightness Consistency")
+plt.grid()
+
+plt.savefig(os.path.join(save_dir, "brightness_trend.png"))
+plt.close()
+
+# ------------------------
+# 4. SSIM Distribution
+# ------------------------
+
+plt.figure()
+df["ssim"].hist(bins=20)
+plt.title("SSIM Distribution")
+plt.grid()
+
+plt.savefig(os.path.join(save_dir, "ssim_hist.png"))
+plt.close()
+
+# ------------------------
+# 5. LPIPS Distribution
+# ------------------------
+
+plt.figure()
+df["lpips"].hist(bins=20)
+plt.title("LPIPS Distribution")
+plt.grid()
+
+plt.savefig(os.path.join(save_dir, "lpips_hist.png"))
+plt.close()
+
+# ------------------------
+# 6. Strength-based plots (if available)
+# ------------------------
+
+if has_strength:
     plt.figure(figsize=(8,6))
 
-    for condition in subset["condition"].unique():
-        cond_subset = subset[subset["condition"] == condition]
+    if has_condition:
+        for condition in df["condition"].unique():
+            subset = df[df["condition"] == condition]
+            grouped = subset.groupby("strength_numeric").mean(numeric_only=True)
 
-        plt.scatter(
-            cond_subset["brightness_diff"],
-            cond_subset["ssim"],
-            label=condition,
-            alpha=0.7
-        )
+            plt.plot(grouped.index, grouped["brightness_diff"], marker='o', label=condition)
+        plt.legend()
+    else:
+        grouped = df.groupby("strength_numeric").mean(numeric_only=True)
+        plt.plot(grouped.index, grouped["brightness_diff"], marker='o')
 
-    plt.xlabel("Brightness Change")
-    plt.ylabel("SSIM")
-    plt.title(f"Tradeoff at Strength = {strength}")
-    plt.legend()
+    plt.xlabel("Strength")
+    plt.ylabel("Brightness Change")
+    plt.title("Brightness vs Strength")
     plt.grid()
 
-    plt.savefig(os.path.join(save_dir, f"tradeoff_strength_{int(strength*100)}.png"))
+    plt.savefig(os.path.join(save_dir, "brightness_vs_strength.png"))
     plt.close()
 
-# ------------------------
-# 3. Brightness vs Strength (VERY IMPORTANT)
-# ------------------------
-
-plt.figure(figsize=(8,6))
-
-for condition in df["condition"].unique():
-    subset = df[df["condition"] == condition]
-    grouped = subset.groupby("strength").mean(numeric_only=True)
-
-    plt.plot(
-        grouped.index,
-        grouped["brightness_diff"],
-        marker='o',
-        label=condition
-    )
-
-plt.xlabel("Strength")
-plt.ylabel("Brightness Change")
-plt.title("Brightness vs Strength")
-plt.legend()
-plt.grid()
-
-plt.savefig(os.path.join(save_dir, "brightness_vs_strength.png"))
-plt.close()
-
-# ------------------------
-# 4. SSIM vs Strength
-# ------------------------
-
-plt.figure(figsize=(8,6))
-
-for condition in df["condition"].unique():
-    subset = df[df["condition"] == condition]
-    grouped = subset.groupby("strength").mean(numeric_only=True)
-
-    plt.plot(
-        grouped.index,
-        grouped["ssim"],
-        marker='o',
-        label=condition
-    )
-
-plt.xlabel("Strength")
-plt.ylabel("SSIM")
-plt.title("Structure Preservation vs Strength")
-plt.legend()
-plt.grid()
-
-plt.savefig(os.path.join(save_dir, "ssim_vs_strength.png"))
-plt.close()
-
-# ------------------------
-# 5. Variance vs Strength (STABILITY)
-# ------------------------
-
-plt.figure(figsize=(8,6))
-
-for condition in df["condition"].unique():
-    subset = df[df["condition"] == condition]
-    grouped_std = subset.groupby("strength").std(numeric_only=True)
-
-    plt.plot(
-        grouped_std.index,
-        grouped_std["brightness_diff"],
-        marker='o',
-        label=condition
-    )
-
-plt.xlabel("Strength")
-plt.ylabel("Brightness Std Dev")
-plt.title("Brightness Variability vs Strength")
-plt.legend()
-plt.grid()
-
-plt.savefig(os.path.join(save_dir, "variance_vs_strength.png"))
-plt.close()
-
-# ------------------------
-# 6. Condition comparison (bar chart at each strength)
-# ------------------------
-
-for strength in sorted(df["strength"].unique()):
-    subset = df[df["strength"] == strength]
-    grouped = subset.groupby("condition").mean(numeric_only=True)
-
-    grouped["brightness_diff"].plot(kind="bar", figsize=(6,4))
-    plt.title(f"Brightness per Condition (Strength={strength})")
-    plt.ylabel("Brightness Change")
-    plt.xticks(rotation=0)
-
-    plt.tight_layout()
-    plt.savefig(os.path.join(save_dir, f"brightness_condition_s{int(strength*100)}.png"))
-    plt.close()
-
-# ------------------------
-# Done
-# ------------------------
-
-print(f"All multi-strength plots saved to: {save_dir}")
+print(f"All plots saved to: {save_dir}")

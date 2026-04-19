@@ -3,8 +3,8 @@ import json
 import numpy as np
 import pandas as pd
 
-metrics_path = "../methods/ControlNet/outputs/metrics.json"
-npy_dir = "../methods/ControlNet/outputs/metrics"
+metrics_path = "../methods/ZeroDCE/outputs/metrics.json"
+npy_dir = "../methods/ZeroDCE/outputs/metrics"
 
 # ------------------------
 # Load JSON
@@ -16,15 +16,21 @@ with open(metrics_path, "r") as f:
 rows = []
 
 # ------------------------
-# Process entries
+# Process entries (GENERALIZED)
 # ------------------------
 
 for entry in metrics_data:
-    image_id = entry["image"]
-    condition = entry["condition"]
-    strength = entry["strength"]
+    image_id = entry.get("image")
 
-    name = f"{image_id}_{condition}_s{int(strength*100)}"
+    # Optional fields
+    condition = entry.get("condition", "none")
+    strength = entry.get("strength", "none")
+
+    # Build name ONLY if fields exist
+    if condition != "none" and strength != "none":
+        name = f"{image_id}_{condition}_s{int(float(strength)*100)}"
+    else:
+        name = str(image_id)
 
     brightness_path = os.path.join(npy_dir, f"{name}_brightness.npy")
 
@@ -38,10 +44,10 @@ for entry in metrics_data:
         "image": image_id,
         "condition": condition,
         "strength": strength,
-        "ssim": entry["ssim"],
-        "lpips": entry["lpips"],
-        "brightness_diff": entry["brightness_diff"],
-        "hist_diff": entry["hist_diff"],
+        "ssim": entry.get("ssim"),
+        "lpips": entry.get("lpips"),
+        "brightness_diff": entry.get("brightness_diff"),
+        "hist_diff": entry.get("hist_diff"),
         "final_brightness": final_brightness
     }
 
@@ -54,20 +60,31 @@ for entry in metrics_data:
 df = pd.DataFrame(rows)
 
 # Save flat table
-df.to_csv("../methods/ControlNet/outputs/aggregated_results.csv", index=False)
+output_dir = "../methods/ZeroDCE/outputs"
+df.to_csv(os.path.join(output_dir, "aggregated_results.csv"), index=False)
 
 print("Saved aggregated_results.csv")
 
 # ------------------------
-# Pivot (multi-index)
+# Pivot (ONLY if condition exists)
 # ------------------------
 
-pivot = df.pivot_table(
-    index="image",
-    columns=["condition", "strength"],
-    values=["ssim", "lpips", "brightness_diff"]
-)
+if "condition" in df.columns and df["condition"].nunique() > 1:
 
-pivot.to_csv("../methods/ControlNet/outputs/pivot_results_multistrength.csv")
+    pivot_cols = ["condition"]
 
-print("Saved pivot_results_multistrength.csv")
+    # Add strength only if meaningful
+    if df["strength"].nunique() > 1:
+        pivot_cols.append("strength")
+
+    pivot = df.pivot_table(
+        index="image",
+        columns=pivot_cols,
+        values=["ssim", "lpips", "brightness_diff"]
+    )
+
+    pivot.to_csv(os.path.join(output_dir, "pivot_results.csv"))
+    print("Saved pivot_results.csv")
+
+else:
+    print("Skipping pivot (no condition/strength variation)")

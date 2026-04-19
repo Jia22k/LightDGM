@@ -3,8 +3,8 @@ import json
 import numpy as np
 import pandas as pd
 
-metrics_path = "../methods/ZeroDCE/outputs/metrics.json"
-npy_dir = "../methods/ZeroDCE/outputs/metrics"
+metrics_path = "../methods/EnlightenGAN/outputs/metrics.json"
+npy_dir = "../methods/EnlightenGAN/outputs/metrics"
 
 # ------------------------
 # Load JSON
@@ -60,7 +60,7 @@ for entry in metrics_data:
 df = pd.DataFrame(rows)
 
 # Save flat table
-output_dir = "../methods/ZeroDCE/outputs"
+output_dir = "../methods/EnlightenGAN/outputs"
 df.to_csv(os.path.join(output_dir, "aggregated_results.csv"), index=False)
 
 print("Saved aggregated_results.csv")

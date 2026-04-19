@@ -10,3 +10,4 @@ data/
 *.csv
 *.json
 *.pth
+*.weight

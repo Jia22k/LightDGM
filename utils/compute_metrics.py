@@ -27,7 +27,7 @@ for fname in os.listdir(output_dir):
     gt_img = cv2.cvtColor(cv2.imread(gt_path), cv2.COLOR_BGR2RGB)
     output_img = cv2.cvtColor(cv2.imread(output_path), cv2.COLOR_BGR2RGB)
 
-    metrics = compute_metrics(gt_img, output_img)
+    metrics = compute_metrics(output_img, gt_img)
     metrics = {k: float(v) for k, v in metrics.items()}
     metrics["image"] = fname
 

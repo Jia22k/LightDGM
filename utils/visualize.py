@@ -8,8 +8,8 @@ import numpy as np
 # Setup
 # ------------------------
 
-csv_path = "../methods/EnlightenGAN/outputs/aggregated_results.csv"
-save_dir = "../methods/EnlightenGAN/outputs/plots"
+csv_path = "../methods/ZeroDCE/outputs/aggregated_results.csv"
+save_dir = "../methods/ZeroDCE/outputs/plots"
 os.makedirs(save_dir, exist_ok=True)
 
 df = pd.read_csv(csv_path)

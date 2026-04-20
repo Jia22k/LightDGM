@@ -11,7 +11,7 @@ from model import ZeroDCERunner
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
-dataset = LoLDataset(os.path.join(ROOT, "datasets/LoL/eval15/low/"))
+dataset = LoLDataset(os.path.join(ROOT, "datasets/LoL/eval15/low/"), os.path.join(ROOT, "datasets/LoL/eval15/high/"))
 
 runner = ZeroDCERunner(os.path.join(ROOT, "pretrained/zerodce.pth"))
 
@@ -21,8 +21,9 @@ os.makedirs(save_root, exist_ok=True)
 all_metrics = []
 
 for idx in range(len(dataset)):
-    img, path = dataset[idx]
+    img, gt, path = dataset[idx]
     img_np = np.array(img)
+    gt_np = np.array(gt)
 
     name = os.path.splitext(os.path.basename(path))[0]
 
@@ -30,7 +31,7 @@ for idx in range(len(dataset)):
 
     output_np = runner.run(img, save_root, name)
 
-    metrics = compute_metrics(img_np, output_np)
+    metrics = compute_metrics(output_np, gt_np)
     metrics = {k: float(v) for k, v in metrics.items()}
     metrics["image"] = name
 

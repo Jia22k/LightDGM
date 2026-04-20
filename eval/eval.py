@@ -9,21 +9,23 @@ loss_fn = lpips.LPIPS(net='alex').to("cuda")
 def brightness_map(img):
     return 0.299*img[:,:,0] + 0.587*img[:,:,1] + 0.114*img[:,:,2]
 
-def compute_metrics(img1, img2):
-    img1_gray = cv2.cvtColor(img1, cv2.COLOR_RGB2GRAY)
-    img2_gray = cv2.cvtColor(img2, cv2.COLOR_RGB2GRAY)
+def compute_metrics(output_img, gt):
+    output_img_gray = cv2.cvtColor(output_img, cv2.COLOR_RGB2GRAY)
+    gt_img_gray = cv2.cvtColor(gt, cv2.COLOR_RGB2GRAY)
 
-    ssim_val = ssim(img1_gray, img2_gray)
+    print ("GT shape, Output shape:", gt_img_gray.shape, output_img_gray.shape)
 
-    brightness_diff = np.mean(brightness_map(img2)) - np.mean(brightness_map(img1))
+    ssim_val = ssim(output_img_gray, gt_img_gray, data_range=255)
 
-    hist1 = cv2.calcHist([img1], [0], None, [256], [0,256])
-    hist2 = cv2.calcHist([img2], [0], None, [256], [0,256])
+    brightness_diff = np.mean(brightness_map(gt)) - np.mean(brightness_map(output_img))
+
+    hist1 = cv2.calcHist([output_img], [0], None, [256], [0,256])
+    hist2 = cv2.calcHist([gt], [0], None, [256], [0,256])
     hist_diff = np.linalg.norm(hist1 - hist2)
 
     lpips_val = loss_fn(
-        torch.tensor(img1/255.).permute(2,0,1).unsqueeze(0).float().to("cuda"),
-        torch.tensor(img2/255.).permute(2,0,1).unsqueeze(0).float().to("cuda")
+        torch.tensor(output_img/255.).permute(2,0,1).unsqueeze(0).float().to("cuda"),
+        torch.tensor(gt/255.).permute(2,0,1).unsqueeze(0).float().to("cuda")
     ).item()
 
     return {
